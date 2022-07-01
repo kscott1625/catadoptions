@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: 5rem;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 780px) {
+  .home {
+    min-width: 150vh;
+    min-height: 400vh;
+    background-image: url('../assets/CAlogo.png');
+  }
+  .content {
+    flex-direction: column;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  video {
+    display: none;
+  }
+  .overlay {
+    display: none;
+  }
+}
